@@ -1,0 +1,14 @@
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <!-- <p-inputGroup> -->
+      <p-iconField class="spaced-iconfield" iconPosition="left">
+        <p-inputIcon styleClass="pi pi-envelope" />
+        <input type="text" pInputText formControlName="email" placeholder="Email" />
+      </p-iconField>
+    <p-iconField class="spaced-iconfield" iconPosition="left">
+      <p-inputIcon styleClass="pi pi-key" />
+      <input pInputText type="password" formControlName="password" placeholder="Password" />
+    </p-iconField>
+    <div class="button-container">
+      <p-button label="Login" type="submit"></p-button>
+    </div>
+  </form>
